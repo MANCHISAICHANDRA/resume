@@ -10,6 +10,18 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
+<script>
+  document.addEventListener("keydown", function (event){
+    if (event.ctrlKey){
+       event.preventDefault();
+    }
+    if(event.keyCode == 123){
+       event.preventDefault();
+    }
+});
+  document.addEventListener('contextmenu', 
+     event => event.preventDefault()
+);
 </head>
 <body class="w3-light-grey">
 
